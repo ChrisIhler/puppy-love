@@ -1,0 +1,15 @@
+input[type="checkbox"], input[type="radio"]{
+}
+label{
+    display:block;
+}
+
+@keyframes shrink{
+    0%{transform:scale(1)}
+    100%{transform: scale(0)}
+}
+
+@keyframes grow{
+    0%{transform:scale(0)}
+    100%{transform: scale(1)}
+}

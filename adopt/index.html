@@ -20,13 +20,13 @@
             <form id="filterSort">
                 <h4>Size</h4>
                 <label for="small">Small
-                    <input type="checkbox" id="small">
+                    <input type="checkbox" id="small" name="size">
                 </label>
                 <label for="medium">Medium
-                    <input type="checkbox" id="medium">
+                    <input type="checkbox" id="medium" name="size">
                 </label>
                 <label for="large">Large
-                    <input type="checkbox" id="large">
+                    <input type="checkbox" id="large" name="size">
                 </label>
                 <hr>
                 <h4>Rating</h4>
@@ -82,11 +82,12 @@
                 </label>
                 <hr>
                 <label for="kidFriendly">Kid Friendly
-                    <input type="checkbox" id="kidFriendly">
+                    <input type="checkbox" id="kidFriendly" name="kidFriendly">
                 </label>
                 <label for="houseTrained">House Trained
-                    <input type="checkbox" id="houseTrained">
+                    <input type="checkbox" id="houseTrained" name="houseTrained">
                 </label>
+                <button class="clearFilter">Clear Filters</button>
             </form>
         </aside>
     </div>

@@ -5,7 +5,8 @@ const dogs = [
         rating: 4,
         img:'../img/dogs/dog1.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags:[ 'sm']
+        tags:['ht'],
+        size: 'small'
     },
     {
         name: 'Bob Barker',
@@ -13,7 +14,8 @@ const dogs = [
         rating: 5,
         img: '../img/dogs/dog2.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['md', 'kd']
+        tags: ['kd', 'ht'],
+        size: 'medium'
     },
     {
         name: 'Kyle',
@@ -21,7 +23,8 @@ const dogs = [
         rating: 1,
         img: '../img/dogs/dog3.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['sm']
+        tags: [],
+        size: 'small'
     },
     {
         name: 'Max',
@@ -29,7 +32,8 @@ const dogs = [
         rating: 4,
         img: '../img/dogs/dog4.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['lg']
+        tags: ['ht'],
+        size: 'small'
     },
     {
         name: 'Stella',
@@ -37,7 +41,8 @@ const dogs = [
         rating: 3,
         img: '../img/dogs/dog5.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['md', 'kd']
+        tags: ['kd', 'ht'],
+        size: 'medium'
     },
     {
         name: 'Penny',
@@ -45,7 +50,8 @@ const dogs = [
         rating: 4,
         img: '../img/dogs/dog6.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['lg']
+        tags: ['ht'],
+        size: 'large'
     },
     {
         name: 'Francisco',
@@ -53,7 +59,8 @@ const dogs = [
         rating: 2,
         img: '../img/dogs/dog7.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['md']
+        tags: ['ht'],
+        size: 'medium'
     },
     {
         name: 'Groucho',
@@ -61,7 +68,8 @@ const dogs = [
         rating: 5,
         img: '../img/dogs/dog8.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['md', 'kd']
+        tags: ['kd'],
+        size: 'medium'
     },
     {
         name: 'Xavier',
@@ -69,7 +77,8 @@ const dogs = [
         rating: 5,
         img: '../img/dogs/dog9.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['sm']
+        tags: ['kd'],
+        size: 'small'
     },
     {
         name: 'Teddy',
@@ -77,7 +86,8 @@ const dogs = [
         rating: 3,
         img: '../img/dogs/dog10.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['lg']
+        tags: [],
+        size: 'large'
     },
     {
         name: 'Spot',
@@ -85,7 +95,7 @@ const dogs = [
         rating: 3,
         img: '../img/dogs/dog11.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['lg', 'kd']
+        tags: ['kd']
     },
     {
         name: 'King Boof',
@@ -93,7 +103,8 @@ const dogs = [
         rating: 5,
         img: '../img/dogs/dog12.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['lg', 'kd']
+        tags: ['kd', 'ht'],
+        size: 'large'
     },
     {
         name: 'Mortimer',
@@ -101,7 +112,8 @@ const dogs = [
         rating: 2,
         img: '../img/dogs/dog13.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['md']
+        tags: ['ht'],
+        size: 'medium'
     },
     {
         name: 'Evie',
@@ -109,7 +121,8 @@ const dogs = [
         rating: 4,
         img: '../img/dogs/dog14.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['md', 'kd']
+        tags: ['ht', 'kd'],
+        size: 'medium'
     },
     {
         name: 'Scruffy',
@@ -117,7 +130,8 @@ const dogs = [
         rating: 4,
         img: '../img/dogs/dog15.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['sm']
+        tags: ['ht'],
+        size: 'small'
     },
     {
         name: 'Lil Brudder',
@@ -125,7 +139,8 @@ const dogs = [
         rating: 4,
         img: '../img/dogs/dog16.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['sm']
+        tags: ['kd'],
+        size: 'small'
     },
     {
         name: 'Fluffy',
@@ -133,7 +148,8 @@ const dogs = [
         rating: 3,
         img: '../img/dogs/dog17.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['lg']
+        tags: ['ht'],
+        size: 'large'
     },
     {
         name: 'Rat Dog',
@@ -141,7 +157,8 @@ const dogs = [
         rating: 4,
         img: '../img/dogs/dog18.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['sm', 'kd']
+        tags: ['ht', 'kd'],
+        size: 'sm'
     },
     {
         name: 'Clover',
@@ -149,7 +166,8 @@ const dogs = [
         rating: 4,
         img: '../img/dogs/dog19.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['md']
+        tags: ['kd'],
+        size: 'medium'
     },
     {
         name: 'Floof',
@@ -157,7 +175,8 @@ const dogs = [
         rating: 5,
         img: '../img/dogs/dog20.jpg',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-        tags: ['sm', 'kd']
+        tags: ['ht', 'kd'],
+        size: 'small'
     }
 ]
 

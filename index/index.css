@@ -1,3 +1,16 @@
-.navbar-light{
-    background-color: #e3f2fd;
+.main{
+    background-color: #e3f6f8;
 }
+.navbar{
+    background-color: #50A70A;
+}
+.graphic-heading {
+    background: url("file:///Users/sarah/Dev/puppy-love/index/index%20imgs/dog7-1.jpg") left no-repeat, url("file:///Users/sarah/Dev/puppy-love/index/index%20imgs/dog7-2.jpg") right no-repeat, url("file:///Users/sarah/Dev/puppy-love/index/index%20imgs/dog7-1.jpg") left repeat;
+    padding: 4%;
+    margin: 3% 3% 0px 3%;
+    font-family: 'Muli', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #1D4E0C;
+}
+

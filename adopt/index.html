@@ -15,83 +15,93 @@
 <body id="adopt">
     
     <div class="row">
-    <div class="col-sm-3">
+    <div class="col-md-3">
         <aside>
             <form id="filterSort">
-                <h4>Size</h4>
-                <label for="small">Small
-                    <input type="checkbox" id="small" name="size">
-                </label>
-                <label for="medium">Medium
-                    <input type="checkbox" id="medium" name="size">
-                </label>
-                <label for="large">Large
-                    <input type="checkbox" id="large" name="size">
-                </label>
+                <div>
+                    <h5>Size</h5>
+                    <label for="small">Small
+                        <input type="radio" id="small" name="size">
+                    </label>
+                    <label for="medium">Medium
+                        <input type="radio" id="medium" name="size">
+                    </label>
+                    <label for="large">Large
+                        <input type="radio" id="large" name="size">
+                    </label>
+                    <hr>
+                </div>
+                <div>
+                    <h5>Rating</h5>
+                    <label for="oneUp">
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        &amp; Up
+                        <input type="radio" id="oneUp" name="rating">
+                    </label>
+                    <label for="twoUp">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        &amp; Up
+                        <input type="radio" id="twoUp" name="rating">
+                    </label>
+                    <label for="threeUp">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                        &amp; UP
+                        <input type="radio" id="threeUp" name="rating">
+                    </label>
+                    <label for="fourUp">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        &amp; Up
+                        <input type="radio" id="fourUp" name="rating">
+                    </label>
+                </div>
                 <hr>
-                <h4>Rating</h4>
-                <label for="oneUp">
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    &amp; Up
-                    <input type="radio" id="oneUp" name="rating">
-                </label>
-                <label for="twoUp">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    &amp; Up
-                    <input type="radio" id="twoUp" name="rating">
-                </label>
-                <label for="threeUp">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    &amp; UP
-                    <input type="radio" id="threeUp" name="rating">
-                </label>
-                <label for="fourUp">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    &amp; Up
-                    <input type="radio" id="fourUp" name="rating">
-                </label>
+                <div>
+                    <h5>Adoption Fee</h5>
+                    <label for="free">Free
+                        <input type="radio" id="free" name="fee">
+                    </label>
+                    <label for="ltOneHundred">&lt; $100.<sup>00</sup>
+
+                        <input type="radio" id="ltOneHundred" name="fee">
+                    </label>
+                    <label for="ltTwoHundred">&lt; $200.<sup>00</sup>
+                        <input type="radio" id="ltTwoHundred" name="fee">
+                    </label>
+                    <label for="ltFiveHundred">&lt; $500.<sup>00</sup>
+                        <input type="radio" id="ltFiveHundred" name="fee">
+                    </label>
+                </div>
                 <hr>
-                <h4>Adoption Fee</h4>
-                <label for="free">Free
-                    <input type="radio" id="free" name="fee">
-                </label>
-                <label for="ltOneHundred">&lt; $100.<sup>00</sup>
-                    <input type="radio" id="ltOneHundred" name="fee">
-                </label>
-                <label for="ltTwoHundred">&lt; $200.<sup>00</sup>
-                    <input type="radio" id="ltTwoHundred" name="fee">
-                </label>
-                <label for="ltFiveHundred">&lt; $500.<sup>00</sup>
-                    <input type="radio" id="ltFiveHundred" name="fee">
-                </label>
-                <hr>
-                <label for="kidFriendly">Kid Friendly
-                    <input type="checkbox" id="kidFriendly" name="kidFriendly">
-                </label>
-                <label for="houseTrained">House Trained
-                    <input type="checkbox" id="houseTrained" name="houseTrained">
-                </label>
-                <button class="clearFilter">Clear Filters</button>
+                <div>
+                    <h5>Requisites</h5>
+                    <label for="kidFriendly">Kid Friendly
+                        <input type="checkbox" id="kidFriendly" name="kidFriendly">
+                    </label>
+                    <label for="houseTrained">House Trained
+                        <input type="checkbox" id="houseTrained" name="houseTrained">
+                    </label>
+                    <button class="clearFilter btn">Clear Filters</button>
+                </div>
             </form>
         </aside>
     </div>
-    <div class="col-sm-9">
+    <div class="col-md-9">
         <main>
             <div class="container">
                 <div class="row"></div>
@@ -99,6 +109,7 @@
         </main>
     </div>    
     </div>
+    <i class="filterbtn fas fa-filter"></i>
     
    
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

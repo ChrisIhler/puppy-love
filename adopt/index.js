@@ -11,7 +11,7 @@ function cardGen(dogs){
             starVal.push('<i class="far fa-star"></i>')
         }
         let dogCard = 
-            `<div class="card" style="width: 18rem;">
+            `<div class="card">
                 <img class="card-img-top" src="${dog.img}" alt="Image of ${dog.name}">
                 <div class="card-body">
                     <h5 class="card-title">${dog.name}</h5>
@@ -19,7 +19,8 @@ function cardGen(dogs){
                     <h6>Adoption fee: <span class="adoptionFee">$${dog.adoptionFee}</span>.<sup>00</sup></h6>
 
                     <p class="card-text">${dog.desc}</p>
-                    <a href="#" class="btn btn-primary">Add to your litter</a>
+                    <button class="btn btn-primary">Add to your litter</button>
+                    <button class="remove btn btn-secondary hidden">Remove ${dog.name} :( </button> <i class="fas fa-check-circle hidden"></i>
                 </div>
             </div>`
 
@@ -31,6 +32,11 @@ function cardGen(dogs){
     for (let card of cards) {
         card.style.animation = 'grow .2s linear'
     }
+    let cardButtons = document.querySelectorAll('.card .btn-primary')
+    for (let button of cardButtons) {
+        button.addEventListener('click', function (e) { select(e) })
+    }
+
 }
 cardGen(dogs)
 
@@ -78,8 +84,17 @@ function filterCards(e){
         if (input.checked === true){
             switch(input.name){
                 case 'rating':
-                    if (input.id === 'twoUp') {
+                    if (input.id === 'oneUp') {
+                        results = results.filter(dog => dog.rating >= 1)
+                    }
+                    else if (input.id === 'twoUp') {
                         results = results.filter(dog => dog.rating >= 2)
+                    }
+                    else if (input.id === 'threeUp') {
+                        results = results.filter(dog => dog.rating >= 3)
+                    }
+                    else {
+                        results = results.filter(dog => dog.rating >= 4)
                     }
                     break
 
@@ -87,11 +102,35 @@ function filterCards(e){
                     if(input.id === 'free'){
                         results = results.filter(dog => dog.adoptionFee === 0)
                     }
+                    else if (input.id === 'ltOneHundred') {
+                        results = results.filter(dog => dog.adoptionFee < 100)
+                    }
+                    else if (input.id === 'ltTwoHundred') {
+                        results = results.filter(dog => dog.adoptionFee < 200)
+                    }
+                    else {
+                        results = results.filter(dog => dog.adoptionFee < 500)
+                    }
                     break
                 
                 case 'kidFriendly':
                     results = results.filter( dog => dog.tags.includes('kf'))
                     break
+
+                case 'houseTrained':
+                    results = results.filter(dog => dog.tags.includes('ht'))
+                    break
+                
+                default: 
+                    if (input.id === 'small'){
+                        results = results.filter( dog => dog.size === 'small')
+                    }
+                    else if(input.id === 'medium'){
+                        results = results.filter(dog => dog.size === 'medium')
+                    }
+                    else{
+                        results = results.filter(dog => dog.size === 'large')
+                    }
 
             }
             
@@ -124,3 +163,35 @@ for (let button of clearFilterBtns){
     button.addEventListener('click', clearFilter)
 }
 
+function select(e){
+    e.target.classList.add('hidden')
+    e.target.nextElementSibling.classList.remove('hidden')
+    e.target.nextElementSibling.nextElementSibling.classList.remove('hidden')
+    const removeButtons = document.querySelectorAll('.remove')
+    for (let button of removeButtons){
+        button.addEventListener('click', function (e) {
+            e.target.classList.add('hidden')
+            e.target.previousElementSibling.classList.remove('hidden')
+            e.target.nextElementSibling.classList.add('hidden')
+        })
+    }
+}
+
+let toggle = true
+document.querySelector('.filterbtn').addEventListener('click', function(){ 
+    let slider = document.querySelector('.col-md-3')
+    if(toggle){
+        slider.style.animation = 'slideOut .25s linear'
+        slider.style.left = 0;
+    }
+    else{
+        setTimeout(
+            function(){
+                setTimeout(function(){
+                    slider.style.animation = 'slideIn .25s linear'
+                }, 0)
+                slider.style.left = '-400px'
+            }, 250)
+    }
+        toggle = !toggle
+})

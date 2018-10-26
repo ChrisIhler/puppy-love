@@ -72,7 +72,7 @@ const dogs = [
         size: 'medium'
     },
     {
-        name: 'Xavier',
+        name: 'Big Bowser',
         adoptionFee: 500,
         rating: 5,
         img: '../img/dogs/dog9.jpg',

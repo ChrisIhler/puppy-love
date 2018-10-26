@@ -73,7 +73,7 @@ const dogs = [
         size: 'medium'
     },
     {
-        name: 'Xavier',
+        name: 'Big Bowser',
         adoptionFee: 500,
         rating: 5,
         img: '../img/dogs/dog9.jpg',
@@ -375,7 +375,7 @@ document.querySelector('.filterbtn').addEventListener('click', function(){
                 setTimeout(function(){
                     slider.style.animation = 'slideIn .25s linear'
                 }, 0)
-                slider.style.left = '-400px'
+                slider.style.left = '-800px'
             }, 250)
     }
         toggle = !toggle

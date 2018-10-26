@@ -35,9 +35,26 @@ aside{
     position:fixed;
     width:200px;
     margin-left:50px;
-    margin-top:50px;
+    padding-top:20px;
+    padding-bottom:50px;
+    overflow-y:scroll;
+    max-height:100vh
 }
 
+aside::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+aside::-webkit-scrollbar-track {
+    background: lightgray;
+}
+
+/* Handle */
+aside::-webkit-scrollbar-thumb {
+    background:#50A70A;
+    border-radius:32px; 
+}
 
 .card{
     margin:20px;

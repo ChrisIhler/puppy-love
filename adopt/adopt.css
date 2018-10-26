@@ -205,7 +205,7 @@ i.fa-check-circle{
         z-index:999;
         padding:0;
         background-color:white;
-        left:-400px;
+        left:-800px;
     }
         
 
@@ -226,63 +226,11 @@ i.fa-check-circle{
     }
 
     @keyframes slideOut{
-        0%{left:-400px}
+        0%{left:-800px}
         100%{left:0}
     }
     @keyframes slideIn{
         0%{left:0}
-        100%{left:-400px}
+        100%{left:-800px}
     }
 }
-/*   .filterbtn{
-        display:block;
-    }
-
-    .filterbtn:hover{
-        opacity:0.9;
-        cursor:pointer;
-    }
-
-
-    #adopt aside{
-        margin-left:0;
-        overflow-y:scroll;
-        width:250px;
-        left:-300px;
-        z-index:9999;
-        background-color:white;
-        border:2px solid #50A70A;
-        border-left: none;
-        padding:10px 0;
-        
-    }
-    .col-md-9{
-        background-color:lightcyan;
-        margin:0 auto;
-    }
-}
-
-
-.slideOut{
-    animation: opened .25s linear;
-    left:0 !important;
-
-}
-
-.slideIn{
-    left:-300px;
-}
-
-.slideInAni{
-    animation: shut .25s linear
-}
-@keyframes opened{
-    0%{left:-300px;}
-    100%{left:0}
-}
-
-@keyframes shut{
-    0%{left:0}
-    100%{left:-300px;}
-}
-*/

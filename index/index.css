@@ -1,6 +1,4 @@
-.main{
-    background-color: #e3f6f8;
-}
+
 .navbar{
     background-color: #50A70A;
 }
@@ -14,3 +12,31 @@
     color: #1D4E0C;
 }
 
+.signup {
+    background-color: #50A70A;
+    margin: 0;
+    padding: 75px 0;
+    text-align: center;
+}
+.container-signup{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+}
+.email{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+.page-footer{
+    padding: 2%;
+    color: white;
+    background-color: #2F6D08;
+}
+.col-xs-3 {
+    width: 23%;
+    padding: 1%;
+    margin: 1%;
+}

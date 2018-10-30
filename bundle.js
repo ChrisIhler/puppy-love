@@ -2,6 +2,7 @@
 const dogs = [
     {
         name: 'Butterscotch',
+        id: 1,
         adoptionFee: 75,
         rating: 4,
         img:'../img/dogs/dog1.jpg',
@@ -11,6 +12,7 @@ const dogs = [
     },
     {
         name: 'Bob Barker',
+        id: 2,
         adoptionFee: 150,
         rating: 5,
         img: '../img/dogs/dog2.jpg',
@@ -20,6 +22,7 @@ const dogs = [
     },
     {
         name: 'Kyle',
+        id: 3,
         adoptionFee: 0,
         rating: 1,
         img: '../img/dogs/dog3.jpg',
@@ -29,6 +32,7 @@ const dogs = [
     },
     {
         name: 'Max',
+        id: 4,
         adoptionFee: 200,
         rating: 4,
         img: '../img/dogs/dog4.jpg',
@@ -38,6 +42,7 @@ const dogs = [
     },
     {
         name: 'Stella',
+        id: 5,
         adoptionFee: 75,
         rating: 3,
         img: '../img/dogs/dog5.jpg',
@@ -47,6 +52,7 @@ const dogs = [
     },
     {
         name: 'Penny',
+        id: 6,
         adoptionFee: 150,
         rating: 4,
         img: '../img/dogs/dog6.jpg',
@@ -56,6 +62,7 @@ const dogs = [
     },
     {
         name: 'Francisco',
+        id: 7,
         adoptionFee: 0,
         rating: 2,
         img: '../img/dogs/dog7.jpg',
@@ -65,6 +72,7 @@ const dogs = [
     },
     {
         name: 'Groucho',
+        id: 8,
         adoptionFee: 200,
         rating: 5,
         img: '../img/dogs/dog8.jpg',
@@ -74,6 +82,7 @@ const dogs = [
     },
     {
         name: 'Big Bowser',
+        id: 9,
         adoptionFee: 500,
         rating: 5,
         img: '../img/dogs/dog9.jpg',
@@ -83,6 +92,7 @@ const dogs = [
     },
     {
         name: 'Teddy',
+        id: 10,
         adoptionFee: 0,
         rating: 3,
         img: '../img/dogs/dog10.jpg',
@@ -92,6 +102,7 @@ const dogs = [
     },
     {
         name: 'Spot',
+        id: 11,
         adoptionFee: 75,
         rating: 3,
         img: '../img/dogs/dog11.jpg',
@@ -100,6 +111,7 @@ const dogs = [
     },
     {
         name: 'King Boof',
+        id: 12,
         adoptionFee: 500,
         rating: 5,
         img: '../img/dogs/dog12.jpg',
@@ -109,6 +121,7 @@ const dogs = [
     },
     {
         name: 'Mortimer',
+        id: 13,
         adoptionFee: 0,
         rating: 2,
         img: '../img/dogs/dog13.jpg',
@@ -118,6 +131,7 @@ const dogs = [
     },
     {
         name: 'Evie',
+        id: 14,
         adoptionFee: 150,
         rating: 4,
         img: '../img/dogs/dog14.jpg',
@@ -127,6 +141,7 @@ const dogs = [
     },
     {
         name: 'Scruffy',
+        id: 15,
         adoptionFee: 250,
         rating: 4,
         img: '../img/dogs/dog15.jpg',
@@ -136,6 +151,7 @@ const dogs = [
     },
     {
         name: 'Lil Brudder',
+        id: 16,
         adoptionFee: 0,
         rating: 4,
         img: '../img/dogs/dog16.jpg',
@@ -145,6 +161,7 @@ const dogs = [
     },
     {
         name: 'Fluffy',
+        id: 17,
         adoptionFee: 50,
         rating: 3,
         img: '../img/dogs/dog17.jpg',
@@ -154,6 +171,7 @@ const dogs = [
     },
     {
         name: 'Rat Dog',
+        id: 18,
         adoptionFee: 200,
         rating: 4,
         img: '../img/dogs/dog18.jpg',
@@ -163,6 +181,7 @@ const dogs = [
     },
     {
         name: 'Clover',
+        id: 19,
         adoptionFee: 175,
         rating: 4,
         img: '../img/dogs/dog19.jpg',
@@ -172,6 +191,7 @@ const dogs = [
     },
     {
         name: 'Floof',
+        id: 20,
         adoptionFee: 200,
         rating: 5,
         img: '../img/dogs/dog20.jpg',
@@ -204,8 +224,10 @@ function cardGen(dogs){
                     <h6>Adoption fee: <span class="adoptionFee">$${dog.adoptionFee}</span>.<sup>00</sup></h6>
 
                     <p class="card-text">${dog.desc}</p>
-                    <button class="btn btn-primary">Add to your litter</button>
-                    <button class="remove btn btn-secondary hidden">Remove ${dog.name} :( </button> <i class="fas fa-check-circle hidden"></i>
+                    <button class="btn btn-primary">Add to your family <span class="idx hidden">${dog.id}</span></button>
+                    <button class="remove btn btn-secondary hidden">Remove Me :( <span class="idx hidden">${dog.id}</span></button> 
+                    <i class="fas fa-check-circle hidden"></i>
+                    
                 </div>
             </div>`
 
@@ -217,50 +239,53 @@ function cardGen(dogs){
     for (let card of cards) {
         card.style.animation = 'grow .2s linear'
     }
-    let cardButtons = document.querySelectorAll('.card .btn-primary')
-    for (let button of cardButtons) {
+    
+    //add select function for unselected cards
+    let primaryCardButtons = document.querySelectorAll('.card .btn-primary')
+    for (let button of primaryCardButtons) {
         button.addEventListener('click', function (e) { select(e) })
     }
+   
+    //make dogs selected if in local storage
+    let selectedDogsString = localStorage.getItem('adoptionCart')
+    if(selectedDogsString === null){ selectedDogsString = '[]'}
+    let selectedDogsArray = JSON.parse(selectedDogsString)
+    let secondaryCardButtons = document.querySelectorAll('.card .btn-secondary')
+    
+    for (let dogs of selectedDogsArray) {
+        for(let button of secondaryCardButtons){
+            let index = Number(button.children[0].textContent)
+            if (dogs.id === index) {
+                button.classList.remove('hidden')
+                button.nextElementSibling.classList.remove('hidden')
+                button.previousElementSibling.classList.add('hidden')
+                
+                button.addEventListener('click', function (e) {
+                    let index = Number(e.target.children[0].textContent)
+                    removeFromLocal(index)
+                    e.target.classList.add('hidden')
+                    e.target.previousElementSibling.classList.remove('hidden')
+                    e.target.nextElementSibling.classList.add('hidden')
+                })
+            }
+        }
+    }
 
+  
+        
 }
+
+
 cardGen(dogs)
 
 document.querySelector('#filterSort').addEventListener('change', function(e){filterCards(e)})
 
 function filterCards(e){
-    console.log(e.target)
     let cards = document.querySelectorAll('.card')
     for(let card of cards){
         card.style.animation = 'shrink .2s linear'
     }
-    // if(e.target.checked === false){
-    //     switch(e.target.name){
-    //         case 'size':
-    //             if(e.target.id === 'small'){
-    //                 cardGen(dogs.filter(dog => dog.tags.includes('sm')))
-    //             }
-    //             else if(e.target.id === 'medium'){
-    //                 cardGen(dogs.filter(dog => dog.tags.includes('md')))
-    //             }
-    //             else{
-    //                 cardGen(dogs.filter(dog => dog.tags.includes('lg')))
-    //             }
-    //             break
-    //         case 'rating':
-    //             if(e.target.id === 'oneUp'){
 
-    //             }
-    //             else if (e.target.id === 'twoUp'){
-
-    //             }
-    //             else if (e.target.id === 'threeUp'){
-                    
-    //             }
-    //             else{
-
-    //             }
-    //     }
-    // }
 
     const inputs = document.querySelectorAll('#filterSort input')
     let results = [...dogs]
@@ -330,13 +355,11 @@ function filterCards(e){
     else{
         cardGen(results)
     }
-    console.log(results)
 
 }
 
 function clearFilter(){
     let inputs = document.querySelectorAll('input')
-    console.log('function firing')
     for(let input of inputs){
         input.checked = false
     }
@@ -349,12 +372,16 @@ for (let button of clearFilterBtns){
 }
 
 function select(e){
+    //add to local storage
+    let idx = Number(e.target.children[0].textContent)
+    addToLocal(idx)
     e.target.classList.add('hidden')
     e.target.nextElementSibling.classList.remove('hidden')
     e.target.nextElementSibling.nextElementSibling.classList.remove('hidden')
     const removeButtons = document.querySelectorAll('.remove')
     for (let button of removeButtons){
         button.addEventListener('click', function (e) {
+            removeFromLocal(idx)
             e.target.classList.add('hidden')
             e.target.previousElementSibling.classList.remove('hidden')
             e.target.nextElementSibling.classList.add('hidden')
@@ -380,4 +407,43 @@ document.querySelector('.filterbtn').addEventListener('click', function(){
     }
         toggle = !toggle
 })
+
+// document.querySelector('#adopt-btn').addEventListener('click',function(){
+//     console.log('fired')
+//     let checkCircles = document.querySelectorAll('.fa-check-circle')
+//     let storageArray = []
+//     for(let i = 0; i < checkCircles.length;){
+//         if(!checkCircles[i].classList.contains('hidden')){
+//             let dogName = checkCircles[i].parentElement.children[0].textContent
+//             for(let dog of dogs){
+//                 if(dog.name === dogName)
+//                 storageArray.push(dog)
+//             }
+//         }
+//     }
+//     let storageString = JSON.stringify(storageArray)
+//     localStorage.setItem('adoptionCart', storageString)
+// })
+
+
+function addToLocal(idx){
+    let storageString = localStorage.getItem('adoptionCart')
+    if(storageString === null){storageString = '[]'}
+    let storageArray = JSON.parse(storageString)
+    storageArray.push(dogs[idx - 1])
+    storageString = JSON.stringify(storageArray)
+    localStorage.setItem('adoptionCart', storageString)
+}
+
+function removeFromLocal(idx){
+    let storageString = localStorage.getItem('adoptionCart')
+    let storageArray = JSON.parse(storageString)
+    for(let dogIdx in storageArray){
+        if(storageArray[dogIdx].id === idx){
+            storageArray.splice(dogIdx, 1)
+        }
+    }
+    storageString = JSON.stringify(storageArray)
+    localStorage.setItem('adoptionCart', storageString)
+}
 },{"./dogs":1}]},{},[2]);

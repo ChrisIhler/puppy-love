@@ -1,6 +1,7 @@
 const dogs = [
     {
         name: 'Butterscotch',
+        id: 1,
         adoptionFee: 75,
         rating: 4,
         img:'../img/dogs/dog1.jpg',
@@ -10,6 +11,7 @@ const dogs = [
     },
     {
         name: 'Bob Barker',
+        id: 2,
         adoptionFee: 150,
         rating: 5,
         img: '../img/dogs/dog2.jpg',
@@ -19,6 +21,7 @@ const dogs = [
     },
     {
         name: 'Kyle',
+        id: 3,
         adoptionFee: 0,
         rating: 1,
         img: '../img/dogs/dog3.jpg',
@@ -28,6 +31,7 @@ const dogs = [
     },
     {
         name: 'Max',
+        id: 4,
         adoptionFee: 200,
         rating: 4,
         img: '../img/dogs/dog4.jpg',
@@ -37,6 +41,7 @@ const dogs = [
     },
     {
         name: 'Stella',
+        id: 5,
         adoptionFee: 75,
         rating: 3,
         img: '../img/dogs/dog5.jpg',
@@ -46,6 +51,7 @@ const dogs = [
     },
     {
         name: 'Penny',
+        id: 6,
         adoptionFee: 150,
         rating: 4,
         img: '../img/dogs/dog6.jpg',
@@ -55,6 +61,7 @@ const dogs = [
     },
     {
         name: 'Francisco',
+        id: 7,
         adoptionFee: 0,
         rating: 2,
         img: '../img/dogs/dog7.jpg',
@@ -64,6 +71,7 @@ const dogs = [
     },
     {
         name: 'Groucho',
+        id: 8,
         adoptionFee: 200,
         rating: 5,
         img: '../img/dogs/dog8.jpg',
@@ -73,6 +81,7 @@ const dogs = [
     },
     {
         name: 'Big Bowser',
+        id: 9,
         adoptionFee: 500,
         rating: 5,
         img: '../img/dogs/dog9.jpg',
@@ -82,6 +91,7 @@ const dogs = [
     },
     {
         name: 'Teddy',
+        id: 10,
         adoptionFee: 0,
         rating: 3,
         img: '../img/dogs/dog10.jpg',
@@ -91,6 +101,7 @@ const dogs = [
     },
     {
         name: 'Spot',
+        id: 11,
         adoptionFee: 75,
         rating: 3,
         img: '../img/dogs/dog11.jpg',
@@ -99,6 +110,7 @@ const dogs = [
     },
     {
         name: 'King Boof',
+        id: 12,
         adoptionFee: 500,
         rating: 5,
         img: '../img/dogs/dog12.jpg',
@@ -108,6 +120,7 @@ const dogs = [
     },
     {
         name: 'Mortimer',
+        id: 13,
         adoptionFee: 0,
         rating: 2,
         img: '../img/dogs/dog13.jpg',
@@ -117,6 +130,7 @@ const dogs = [
     },
     {
         name: 'Evie',
+        id: 14,
         adoptionFee: 150,
         rating: 4,
         img: '../img/dogs/dog14.jpg',
@@ -126,6 +140,7 @@ const dogs = [
     },
     {
         name: 'Scruffy',
+        id: 15,
         adoptionFee: 250,
         rating: 4,
         img: '../img/dogs/dog15.jpg',
@@ -135,6 +150,7 @@ const dogs = [
     },
     {
         name: 'Lil Brudder',
+        id: 16,
         adoptionFee: 0,
         rating: 4,
         img: '../img/dogs/dog16.jpg',
@@ -144,6 +160,7 @@ const dogs = [
     },
     {
         name: 'Fluffy',
+        id: 17,
         adoptionFee: 50,
         rating: 3,
         img: '../img/dogs/dog17.jpg',
@@ -153,6 +170,7 @@ const dogs = [
     },
     {
         name: 'Rat Dog',
+        id: 18,
         adoptionFee: 200,
         rating: 4,
         img: '../img/dogs/dog18.jpg',
@@ -162,6 +180,7 @@ const dogs = [
     },
     {
         name: 'Clover',
+        id: 19,
         adoptionFee: 175,
         rating: 4,
         img: '../img/dogs/dog19.jpg',
@@ -171,6 +190,7 @@ const dogs = [
     },
     {
         name: 'Floof',
+        id: 20,
         adoptionFee: 200,
         rating: 5,
         img: '../img/dogs/dog20.jpg',

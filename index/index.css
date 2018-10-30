@@ -3,40 +3,62 @@
     background-color: #50A70A;
 }
 .graphic-heading {
-    background: url("file:///Users/sarah/Dev/puppy-love/index/index%20imgs/dog7-1.jpg") left no-repeat, url("file:///Users/sarah/Dev/puppy-love/index/index%20imgs/dog7-2.jpg") right no-repeat, url("file:///Users/sarah/Dev/puppy-love/index/index%20imgs/dog7-1.jpg") left repeat;
     padding: 4%;
-    margin: 3% 3% 0px 3%;
-    font-family: 'Muli', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: #1D4E0C;
+    margin: 4% 3% 0% 3%;
 }
 
 .signup {
+    color:white;
     background-color: #50A70A;
-    margin: 0;
-    padding: 75px 0;
+    padding: 60px 0;
     text-align: center;
-}
-.container-signup{
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    color: white;
-}
-.email{
-    text-align: center;
-    margin-right: auto;
-    margin-left: auto;
-}
-.page-footer{
-    padding: 2%;
-    color: white;
-    background-color: #2F6D08;
 }
 .col-xs-3 {
     width: 23%;
     padding: 1%;
     margin: 1%;
+}
+.col-xs-7{
+    position: relative;
+    width: 40%;
+    min-height: 1px;
+    margin-left: 27%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.row {
+    color:#002500;
+    margin-bottom: 2%;
+}
+
+.product-detail{
+    display: inline-block;
+}
+.product-list img{
+    width: 30%;
+    height: auto;
+}
+footer .map {
+    color:#002500;
+    background-image: url(http://maps.googleapis.com/maps/api/staticmap?autoscale=false&size=600x300&…s=size:mid%7Ccolor:0x797979%7Clabel:G%7C1062);
+    background-position: 50%;
+    margin: 25px;
+    height: 300px;
+    width: calc(100% - 50px);
+} 
+.page-footer{
+    padding-top: 8%;
+    padding-bottom: 2%;
+    background-color: #50A70A;
+    color: white;
+}
+.footer{
+    background: url(file:///Users/sarah/Dev/puppy-love/index/index%20imgs/dogimg4.jpg);
+}
+.container2{
+    background: url(file:///Users/sarah/Dev/puppy-love/index/index%20imgs/light-green-wallpaper-pale-green-background-light-green-wallpaper-hd-for-mobile.jpg)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }

@@ -2,9 +2,15 @@
 .navbar{
     background-color: #50A70A;
 }
-.graphic-heading {
-    padding: 4%;
-    margin: 4% 3% 0% 3%;
+.graphic-heading{
+    border: 5px solid #50A70A;
+    color: #50A70A;
+    width: 70%;
+    padding: 2%;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .signup {
@@ -53,12 +59,10 @@ footer .map {
     color: white;
 }
 .footer{
-    background: url(file:///Users/sarah/Dev/puppy-love/index/index%20imgs/dogimg4.jpg);
+    background: url(file:///Users/sarah/Dev/puppy-love/index/index%20imgs/dogimg4.jpg) no-repeat top;
+    
 }
 .container2{
-    background: url(file:///Users/sarah/Dev/puppy-love/index/index%20imgs/light-green-wallpaper-pale-green-background-light-green-wallpaper-hd-for-mobile.jpg)no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    background: url(file:///Users/sarah/Dev/puppy-love/index/index%20imgs/bgr1.jpg) no-repeat bottom;
+    overflow: auto;
 }

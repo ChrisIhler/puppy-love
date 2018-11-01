@@ -143,10 +143,10 @@
               <p>Get News and Volunteer Information</p>
               <div class="row email-input">
                 <div class="col-xs-7 col-xs-offset-1">
-                  <input class="form-control" type="email" placeholder="Enter your email" id="email-signup">
+                  <input class="form-control" type="email" name="email" autocomplete="off" placeholder="Enter your email" id="emailInput" required>
                 </div>
                 <div class="col-xs-3-inline">
-                  <button type="button" class="btn btn-outline-light">Submit</button>
+                  <button type="button submit" onclick="(emailValidation())"class="btn btn-outline-light">Submit</button>
                 </div>
               </div>
             </div>

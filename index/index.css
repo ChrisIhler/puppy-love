@@ -96,3 +96,16 @@ footer .puppy-list li {
     margin-top: 10px;
     padding-bottom: 0;
 }
+.dogtitle{
+    text-align: center;
+    margin: 8%;
+}
+.dogImg{
+    width: 2800px;
+    height: 250px;
+  
+}
+.invisible {
+    visibility: hidden;
+}
+  

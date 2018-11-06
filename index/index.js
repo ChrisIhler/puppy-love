@@ -10,12 +10,16 @@ function emailValidation (email) {
         return false;
     }
 }
-function showButton(){
-    const buttonLocation = document.getElementById("invisibleButton")
-    buttonLocation.style.invisible = "visible";
-}
-
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip(
-        $('[class="btn btn-success btn-block invisible"]').trigger(showButton()))
-});
+function initElement(){  
+    const images = document.querySelectorAll('.imgHover');
+    
+    images.forEach(img => {
+        const button = img.querySelector('button');
+        img.onmouseover = () => {
+            button.style.visibility = "visible";
+        };
+        img.onmouseout = () => {
+            button.style.visibility = "hidden";
+        };
+    });
+};

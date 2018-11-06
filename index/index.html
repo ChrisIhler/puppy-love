@@ -16,7 +16,7 @@
     <script defer src="../adopt/dogs"></script>
     <title>Adopt a Puppy</title>
 </head>
-<body>
+<body onload="initElement()">
 <main class="main">
 
     <header>
@@ -85,21 +85,20 @@
 
         <div class="album py-5">
             <div class="row">
-                <div class="col-xs-4">
-                    <img data-toggle="tooltip" title="Some text" class="dogImg img-fluid rounded" src="../img/dogs/dog1.jpg" alt="Responsive image">
-                        <h5 class="dogtitle">Butterscotch</h5>
-                        <button class="btn btn-success btn-block invisible">Add to your litter</button>
+                <div class="col-xs-4 imgHover">
+                    <img class="dogImg img-fluid rounded" src="../img/dogs/dog1.jpg">
+                    <h3 class="dogtitle">Butterscotch</h5>
+                    <button class="btn btn-success btn-block">Add to your litter</button>
                 </div>
-                <div class="col-xs-4">
-                    <img data-toggle="tooltip" class="dogImg img-fluid rounded" src="../img/dogs/dog2.jpg" alt="Responsive image">
-   
-                        <h5 class="dogtitle">Bob Barker</h5>
-                        <button class="btn btn-success btn-block invisible">Add to your litter</button>
+                <div class="col-xs-4 imgHover">
+                    <img class="dogImg img-fluid rounded" src="../img/dogs/dog2.jpg">
+                    <h3 class="dogtitle">Bob Baker</h5>
+                    <button class="btn btn-success btn-block">Add to your litter</button>
                 </div>
-                <div class="col-xs-4">
-                    <img data-toggle="tooltip" class="dogImg img-fluid rounded" src="../img/dogs/dog3.jpg" alt="Responsive image">
-                        <h5 class="dogtitle">Kyle</h5>
-                        <button class="btn btn-success btn-block invisible">Add to your litter</button>
+                <div class="col-xs-4 imgHover">
+                    <img class="dogImg img-fluid rounded" src="../img/dogs/dog3.jpg">
+                    <h3 class="dogtitle">Kyle</h5>
+                    <button class="btn btn-success btn-block">Add to your litter</button>
                 </div>
             </div>
         </div>

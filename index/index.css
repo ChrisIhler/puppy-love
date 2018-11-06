@@ -105,7 +105,6 @@ footer .puppy-list li {
     height: 250px;
   
 }
-.invisible {
+ .imgHover button {
     visibility: hidden;
-}
-  
+  }

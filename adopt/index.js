@@ -24,7 +24,7 @@ function cardGen(dogs){
                     <i class="fas fa-check-circle hidden"></i>
                     
                 </div>
-            </div>`
+            </div>`#
 
         dogCardHTML.push(dogCard)
     }
